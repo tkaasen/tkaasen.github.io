@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countdown</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+
+    <div id="time-container">
+     
+
+    
+            <h1 id="time">00:00</h1>
+    </div>
+
+    
+    
+    <div id="inputArea">
+        Skriv inn manuelt: 
+        <input id="minutes" type="number" oninput="setTime(this.value);">
+    </div>
+
+    <div id="buttons-minutes-container">
+        <p>Tid: </p>
+		<button onclick="setTime('5')">5</button>
+		<button onclick="setTime('10')">10</button>
+		<button onclick="setTime('15')">15</button>
+		<button onclick="setTime('20')">20</button>
+		<button onclick="setTime('25')">25</button>
+		<button onclick="setTime('30')">30</button>
+	</div>
+
+    <div id="buttons-container">
+		<button id="start" onclick="clearInterval(intervalHandle); startCountdown(); hideButtons();">Start</button>
+		<!-- <button id="pause">Pause</button> -->
+		<button id="reset" onclick="clearInterval(intervalHandle); setTime(document.getElementById('minutes').value); showButtons();">Reset</button>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
