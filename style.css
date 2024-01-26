@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+
+#time-container {
+    display: table;
+    color: red;
+    font-family: sans-serif;
+    font-size: 11vw;
+    margin: auto;
+    /* padding: 0.5vw 0vw; */
+}
+
+
+
+#inputArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-minutes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
